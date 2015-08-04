@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zero To App Help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="lib/css/jqm-demos.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script src="lib/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/js/index.js"></script>
+    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+
+<!-- Start of main page: #home -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>ZeroToApp Help</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <h3>Topics:</h3>
+    <p><a href="#overview" class="ui-btn ui-shadow ui-corner-all">Class Overview</a></p>
+    <p><a href="#terms" class="ui-btn ui-shadow ui-corner-all">Terminology</a></p>
+  </div><!-- /content -->
+  <div data-role="footer" data-theme="a">
+    <h4>Main Page</h4>
+  </div><!-- /footer -->
+</div><!-- /page home -->
+
+<!-- Start of second page: #overview -->
+<div data-role="page" id="overview">
+  <div data-role="header">
+    <h1>Overview</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <h3>Topics:</h3>
+    Over the course of the week, we will develop a cross platform app that will be deployed on
+    iOS (iPad/iPhone/iPod touch...) or Android device of student's choice. <br>
+    Various state of the art technologies/apps/libraries will be used, including:
+    <ul>
+      <li>Slack - for Instant Messaging</li>
+      <li>github - for storing/sharing App</li>
+      <li>HTML - for App templating</li>
+      <li>CSS - for App beautification</li>
+      <li>Javascript - for infusing life</li>
+      <li>jQuery Mobile - lib for making App generic</li>
+      <li>cordova - for deploying App to device</li>
+    </ul>
+    <p><a href="#home" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Home</a></p>
+  </div><!-- /content -->
+</div><!-- /page overview -->
+
+<!-- Start of third page: #terms -->
+<div data-role="page" id="terms">
+  <div data-role="header">
+    <h1>Terminology</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <h3>Topics:</h3>
+    <p><a href="#terms_html" class="ui-btn ui-shadow ui-corner-all">HTML</a></p>
+    <p><a href="#terms_css" class="ui-btn ui-shadow ui-corner-all">CSS</a></p>
+    <p><a href="#terms_js" class="ui-btn ui-shadow ui-corner-all">Javascript</a></p>
+    <p><a href="#home" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Home</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms -->
+
+<!-- Start of fourth page: #terms_html -->
+<div data-role="page" id="terms_html">
+  <div data-role="header">
+    <h1>HTML</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    HTML is used to define the skeleton of your app. Browser renders HTML files.
+    A HTML document uses tags - each tag has a beginning (ex., <pre><html></pre>)
+    and an end (ex., <pre></html></pre>).
+    A minimal HTML document contains: <br>
+    <ol>
+      <li><strong>!DOCTYPE html</strong> <u>tag</u> at the top (identifies a HTML5 document). </li>
+      <li>2. A <strong>html</strong> <u>tag</u> that identifies the start and end of the document. </li>
+      <li>3. A <strong>head</strong> <u>tag</u> that identifies the heading section of the document. </li>
+        <ol>
+          <li>3.1 Within this tag, usually <strong>title</strong> <u>tag</u> is used by the browser to identify the tab. </li>
+          <li>3.2 Javascript code/files and css code/files can also be added. </li>
+        </ol>
+      <li>4. A <strong>body</strong> <u>tag</u> that identifies the main (body) section of the document. </li>
+        <ol>
+          <li>4.1 This body will contain portions of the document that will be rendered in the browser. </li>
+        </ol>
+      </li>
+    </ol>
+    A sample HTML document format is as follows:
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;First Page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Bold heading in my first page&lt;/h1&gt;
+          &lt;h6&gt;Bold, but smaller text in my first page&lt;/h1&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    This document will be rendered in the browser as follows:
+    <h1>Bold heading in my first page</h1>
+    <h6>Bold, but smaller text in my first page</h6>
+    <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms_html -->
+
+<!-- Start of fifth page: #terms_css -->
+<div data-role="page" id="terms_css">
+  <div data-role="header">
+    <h1>CSS</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <u><b>C</b></u>ascading <u><b>S</b></u>tyle <u><b>S</b></u>heets define the beauty (skin) of your app.
+    CSS refers to HTML elements either by their tag name (not usual) OR by id (#<id_name>) or by class (.<class_name>).
+    A typical CSS may control a tag's class as follows: <br>
+      <u>In HTML:</u> &lt;h1 class="xyz"&gt; .... &lt;/h1&gt; <br>
+      <u>In CSS:</u> .xyz { color: red, background-color: blue; }
+    which will set that particular <strong>h1</strong> tag to be rendered with red on blue color.
+    <br><br>
+    A typical CSS may control a tag identified by id <u>abc</u> as follows: <br>
+      <u>In HTML:</u> &lt;div id="abc"&gt; .... &lt;/div&gt; <br>
+      <u>In CSS:</u> #abc { color: red; font-size: 200%; }
+    which will set that particular <strong>div</strong> tag to be rendered with red color and double the usual font size.
+    <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms_css -->
+
+<!-- Start of sixth page: #terms_js -->
+<div data-role="page" id="terms_js">
+  <div data-role="header">
+    <h1>Javascript</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <u><b>Javascript</b></u> is like the internal organs of an app. They define behavior and ingest life into the skeleton and skin.
+    Javascript functions may be called when there is an event triggered from the HTML document.
+    A typical javascript may be called as follows: <br>
+      <u>In HTML:</u> &lt;span onclick="digit('9')"&gt;9&lt;/span&gt; <br>
+      <u>In javascript:</u> <code>function digit(number) { console.log("You entered digit", number); } </code> <br>
+    which will print the message - <u>You entered digit 9</u> on the console when 9 is clicked in the HTML.
+    <br><br>
+    Javascript can also be used to inject code into a HTML element identified by id.
+      <u>In HTML:</u> &lt;span id="xyz"&gt; &lt;/span&gt; <br>
+      <u>In javascript:</u> <code>document.getElementById('xyz').innerHTML = "Replace span content with this text";</code> <br>
+    which will display the content <u>Replace span content with this text</u> in the HTML when the span statement happens.
+    <br><br>
+    Javascript can also be used to inject code into a HTML element identified by class.
+      <u>In HTML:</u> &lt;span class="abc"&gt; &lt;/span&gt; <br>
+      <u>In javascript:</u> <code>document.getElementByClass('abc')[0].innerHTML = "Replace first span content with this text";</code> <br>
+    which will display the content <u>Replace first span content with this text</u> in the HTML when the first span statement
+    is encountered.
+    <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms_js -->
+  </body>
+  <script>
+    if (window.navigator.standalone) {
+      $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+    }
+  </script>
+</html>
