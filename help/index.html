@@ -40,7 +40,8 @@
     Various state of the art technologies/apps/libraries will be used, including:
     <ul>
       <li>Slack - for Instant Messaging</li>
-      <li>github - for storing/sharing App</li>
+      <li>git - Command line client for sharing code</li>
+      <li>github - Repository for sharing code</li>
       <li>HTML - for App templating</li>
       <li>CSS - for App beautification</li>
       <li>Javascript - for infusing life</li>
@@ -61,6 +62,7 @@
     <p><a href="#terms_html" class="ui-btn ui-shadow ui-corner-all">HTML</a></p>
     <p><a href="#terms_css" class="ui-btn ui-shadow ui-corner-all">CSS</a></p>
     <p><a href="#terms_js" class="ui-btn ui-shadow ui-corner-all">Javascript</a></p>
+    <p><a href="#terms_git" class="ui-btn ui-shadow ui-corner-all">git</a></p>
     <p><a href="#home" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Home</a></p>
   </div><!-- /content -->
 </div><!-- /page terms -->
@@ -137,6 +139,7 @@
   </div><!-- /header -->
   <div role="main" class="ui-content" >
     <u><b>Javascript</b></u> is like the internal organs of an app. They define behavior and ingest life into the skeleton and skin.
+    <br>
     Javascript functions may be called when there is an event triggered from the HTML document.
     A typical javascript may be called as follows: <br>
       <u>In HTML:</u> &lt;span onclick="digit('9')"&gt;9&lt;/span&gt; <br>
@@ -156,6 +159,44 @@
     <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
   </div><!-- /content -->
 </div><!-- /page terms_js -->
+
+<!-- Start of seventh page: #terms_git -->
+<div data-role="page" id="terms_js">
+  <div data-role="header">
+    <h1>git</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    For the class, we will use a client called <b>git</b> for our github repository.
+    <br><br>
+    Frequently used <b>git</b> commands include:
+    <ul>
+      <li>
+        <h5>git clone &lt;url&gt; &lt;directory&gt;</h5>
+        This command copies content from <b>github</b> repository (identified by &lt;url&gt;)
+        to the directory (identified by &lt;directory&gt;). Please execute the following commands <strong>once</strong> after cloning:
+        <ul>
+          <li>cd &lt;directory&gt;</li>
+          <li>git config --global user.email &lt;youremail@domain.com&gt;</li>
+          <li>git config --global user.name "<YourFirstName YourLastName>"</li>
+          <li>git config http.sslVerify false</li>
+        </ul>
+      </li>
+      <li>
+        <h5>git add</h5>
+        This command is needed before <b>git commit</b> if you have created a new directory locally, for example.
+      </li>
+      <li>
+        <h5>git commit -am "<comment>"</h5>
+        This command checks in all files that are changed locally. &lt;comment&gt; is used to specify what changes you have made.
+      </li>
+      <li>
+        <h5>git push</h5>
+        This command pushes all commited files to the repository (<b>github</b>). Only after a push, will others be able to see your changes.
+      </li>
+    <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms_js -->
+
   </body>
   <script>
     if (window.navigator.standalone) {
