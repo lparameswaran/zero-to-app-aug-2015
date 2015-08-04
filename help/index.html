@@ -20,6 +20,7 @@
   </div><!-- /header -->
   <div role="main" class="ui-content" >
     <h3>Topics:</h3>
+    <p><a href="#picture" class="ui-btn ui-shadow ui-corner-all">Technology Overview</a></p>
     <p><a href="#overview" class="ui-btn ui-shadow ui-corner-all">Class Overview</a></p>
     <p><a href="#terms" class="ui-btn ui-shadow ui-corner-all">Terminology</a></p>
   </div><!-- /content -->
@@ -27,6 +28,17 @@
     <h4>Main Page</h4>
   </div><!-- /footer -->
 </div><!-- /page home -->
+
+<!-- Start of first page: #picture -->
+<div data-role="page" id="picture">
+  <div data-role="header">
+    <h1>Technology Overview</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    <img height="80%" width="80%" src="images/zeroToApp-CrossPlatformImplementation.png"/>
+    <p><a href="#home" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Home</a></p>
+  </div><!-- /content -->
+</div><!-- /page picture -->
 
 <!-- Start of second page: #overview -->
 <div data-role="page" id="overview">
@@ -74,8 +86,8 @@
   </div><!-- /header -->
   <div role="main" class="ui-content" >
     HTML is used to define the skeleton of your app. Browser renders HTML files.
-    A HTML document uses tags - each tag has a beginning (ex., <pre><html></pre>)
-    and an end (ex., <pre></html></pre>).
+    A HTML document uses tags - each tag has a beginning (ex., &lt;html&gt;)
+    and an end (ex., &lt;/html&gt;).
     A minimal HTML document contains: <br>
     <ol>
       <li><strong>!DOCTYPE html</strong> <u>tag</u> at the top (identifies a HTML5 document). </li>
