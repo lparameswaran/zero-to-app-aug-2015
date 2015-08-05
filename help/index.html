@@ -13,7 +13,7 @@
   </head>
   <body>
 
-<!-- Start of main page: #home -->
+<!-- Start of page: #home -->
 <div data-role="page" id="home">
   <div data-role="header">
     <h1>ZeroToApp Help</h1>
@@ -29,7 +29,7 @@
   </div><!-- /footer -->
 </div><!-- /page home -->
 
-<!-- Start of first page: #picture -->
+<!-- Start of page: #picture -->
 <div data-role="page" id="picture">
   <div data-role="header">
     <h1>Technology Overview</h1>
@@ -40,7 +40,7 @@
   </div><!-- /content -->
 </div><!-- /page picture -->
 
-<!-- Start of second page: #overview -->
+<!-- Start of page: #overview -->
 <div data-role="page" id="overview">
   <div data-role="header">
     <h1>Overview</h1>
@@ -64,14 +64,15 @@
   </div><!-- /content -->
 </div><!-- /page overview -->
 
-<!-- Start of third page: #terms -->
+<!-- Start of page: #terms -->
 <div data-role="page" id="terms">
   <div data-role="header">
     <h1>Terminology</h1>
   </div><!-- /header -->
   <div role="main" class="ui-content" >
     <h3>Topics:</h3>
-    <p><a href="#terms_html" class="ui-btn ui-shadow ui-corner-all">HTML</a></p>
+    <p><a href="#terms_html" class="ui-btn ui-shadow ui-corner-all">HTML structure</a></p>
+    <p><a href="#terms_htmltags" class="ui-btn ui-shadow ui-corner-all">HTML tags</a></p>
     <p><a href="#terms_css" class="ui-btn ui-shadow ui-corner-all">CSS</a></p>
     <p><a href="#terms_js" class="ui-btn ui-shadow ui-corner-all">Javascript</a></p>
     <p><a href="#terms_git" class="ui-btn ui-shadow ui-corner-all">git</a></p>
@@ -79,30 +80,13 @@
   </div><!-- /content -->
 </div><!-- /page terms -->
 
-<!-- Start of fourth page: #terms_html -->
+<!-- Start of page: #terms_html -->
 <div data-role="page" id="terms_html">
   <div data-role="header">
-    <h1>HTML</h1>
+    <h1>HTML structure</h1>
   </div><!-- /header -->
   <div role="main" class="ui-content" >
     HTML is used to define the skeleton of your app. Browser renders HTML files.
-    A HTML document uses tags - each tag has a beginning (ex., &lt;html&gt;)
-    and an end (ex., &lt;/html&gt;).
-    A minimal HTML document contains: <br>
-    <ol>
-      <li><strong>!DOCTYPE html</strong> <u>tag</u> at the top (identifies a HTML5 document). </li>
-      <li>2. A <strong>html</strong> <u>tag</u> that identifies the start and end of the document. </li>
-      <li>3. A <strong>head</strong> <u>tag</u> that identifies the heading section of the document. </li>
-        <ol>
-          <li>3.1 Within this tag, usually <strong>title</strong> <u>tag</u> is used by the browser to identify the tab. </li>
-          <li>3.2 Javascript code/files and css code/files can also be added. </li>
-        </ol>
-      <li>4. A <strong>body</strong> <u>tag</u> that identifies the main (body) section of the document. </li>
-        <ol>
-          <li>4.1 This body will contain portions of the document that will be rendered in the browser. </li>
-        </ol>
-      </li>
-    </ol>
     A sample HTML document format is as follows:
     <pre>
       &lt;!DOCTYPE html&gt;
@@ -123,7 +107,57 @@
   </div><!-- /content -->
 </div><!-- /page terms_html -->
 
-<!-- Start of fifth page: #terms_css -->
+<!-- Start of page: #terms_htmltags -->
+<div data-role="page" id="terms_htmltags">
+  <div data-role="header">
+    <h1>HTML tags</h1>
+  </div><!-- /header -->
+  <div role="main" class="ui-content" >
+    HTML is used to define the skeleton of your app. Browser renders HTML files.
+    A HTML document uses tags - each tag has a beginning (ex., &lt;html&gt;) and an end (ex., &lt;/html&gt;).
+    A HTML document may contain many different tags, some of the most important ones are shown below: <br>
+    <ol>
+      <li><strong>!DOCTYPE html</strong> <u>tag</u> at the top (identifies a HTML5 document). </li>
+      <li>A <strong>html</strong> <u>tag</u> that identifies the start and end of the document. </li>
+      <li>A <strong>head</strong> <u>tag</u> that identifies the heading section of the document. </li>
+        <ul>
+          <li>Within this tag, usually <strong>title</strong> <u>tag</u> is used by the browser to identify the tab. </li>
+          <li>Javascript code/files and css code/files can also be added. </li>
+        </ul>
+      <li>
+        A <strong>body</strong> <u>tag</u> that identifies the main (body) section of the document.
+        This body will contain portions of the document that will be rendered in the browser.
+        <br><br>
+        Within the body tag, you may see the following tags:
+        <ul>
+          <li> <strong>h1</strong>, <strong>h2</strong> ... <strong>h6</strong> tags that identify section headings from largest to smallest. </li>
+          <li> <strong>b</strong>, <strong>u</strong> and <strong>i</strong> tags for making text bold, underline and italics respectively. </li>
+          <li> <strong>p</strong> and <strong>br</strong> tags for marking a paragraph and to give a line break (new line) respectively. </li>
+          <li> Lists:
+            <ul>
+              <li>Ordered (numbered) lists: Start and end with a <strong>ol</strong> tag. Each item in the list should start and end with <strong>li</strong> tag.</li>
+              <li>UnOrdered (bulleted) lists: Start and end with a <strong>ul</strong> tag. Each item in the list should start and end with <strong>li</strong> tag.</li>
+            </ul>
+          </li>
+          <li> Tables start and end with a <strong>table</strong> tag. Within the table, you may have:
+            <ul>
+              <li>Optional <strong>thead</strong> tag for the heading row(s). Each heading row has a starting and ending <strong>tr</strong> tag.
+                  Inside the heading row(s), you may have multiple <strong>th</strong> tags, one for each column.</li>
+              <li><strong>tbody</strong> tag for the body row(s). Each body row has a starting and ending <strong>tr</strong> tag.
+                  Inside the body row(s), you may have multiple <strong>td</strong> tags, one for each column.</li>
+              <li>Optional <strong>tfoot</strong> tag for the footer row(s). Each footer row has a starting and ending <strong>tr</strong> tag.
+                  Inside the footer row(s), you may have multiple <strong>td</strong> tags, one for each column.</li>
+            </ul>
+          </li>
+          <li> <strong>b</strong>, <strong>u</strong> and <strong>i</strong> tags for making text bold, underline and italics respectively. </li>
+        </ul>
+      </li>
+    </ol>
+    <p><a href="#terms" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">terms</a></p>
+  </div><!-- /content -->
+</div><!-- /page terms_htmltags -->
+
+<!-- Start of page: #terms_css -->
 <div data-role="page" id="terms_css">
   <div data-role="header">
     <h1>CSS</h1>
@@ -144,7 +178,7 @@
   </div><!-- /content -->
 </div><!-- /page terms_css -->
 
-<!-- Start of sixth page: #terms_js -->
+<!-- Start of page: #terms_js -->
 <div data-role="page" id="terms_js">
   <div data-role="header">
     <h1>Javascript</h1>
@@ -172,7 +206,7 @@
   </div><!-- /content -->
 </div><!-- /page terms_js -->
 
-<!-- Start of seventh page: #terms_git -->
+<!-- Start of page: #terms_git -->
 <div data-role="page" id="terms_git">
   <div data-role="header">
     <h1>git</h1>
