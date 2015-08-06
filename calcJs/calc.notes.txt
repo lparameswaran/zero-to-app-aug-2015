@@ -24,3 +24,8 @@
    * Add disabled="disabled" to all the non working buttons
    Cons:
      * Digits are not being appended - 1 digit replaces another
+
+5. calcJs5.html
+   * Digits are appended
+   Cons:
+     
