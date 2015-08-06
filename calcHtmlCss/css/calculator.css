@@ -1,0 +1,9 @@
+.lcd-display {
+  font-family: Arial;
+  font-size: 400%;
+  color: #000000;
+  background: #bdbdbd;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}

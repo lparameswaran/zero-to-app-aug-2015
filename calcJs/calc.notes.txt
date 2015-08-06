@@ -1,0 +1,26 @@
+1. calcJs1.html
+   * Add reference to javascript file js/calc1.js
+   * In the body tag, add reference to onload="initialize()"
+   - calc1.js:
+     * Obtains the HTML element identified by id="result" and changes that to "0"
+     * You will notice that 12345678 on the display is changed to 0
+   Cons:
+     * Digits do not function 
+
+2. calcJs2.html/calc2.js
+   * initialize() calls updateDisplay()
+   * Added a function called updateDisplay() to display the current result
+   Cons:
+     * Digits do not function 
+
+3. calcJs3.html/calc3.js
+   * Add digit function that accepts d (digit pressed) as a argument
+   * Add onclick="digit('7')" when digit 7 is pressed etc to the corresponding button tag
+   * Digits start appearing on the display
+   Cons:
+     * No visual indication to the user that other buttons are disabled
+
+4. calcJs4.html
+   * Add disabled="disabled" to all the non working buttons
+   Cons:
+     * Digits are not being appended - 1 digit replaces another

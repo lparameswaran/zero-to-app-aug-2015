@@ -1,0 +1,54 @@
+1. calc1.html
+   * Barebones calculator template
+   Cons:
+     * Display row is empty
+
+2. calc2.html
+   * Adds DISPLAY to the lcd display
+   Cons:
+     * DISPLAY text is not formatted 
+
+3. calc3.html
+   * Add css/calculator.css to the head of html
+   * Add class="lcd-display" to the th column for DISPLAY
+   * Add id="result" to the th column for DISPLAY -- this will be used by js later
+   * Change DISPLAY to 12345678 (8 digit calculator)
+   Cons:
+     * Does not look like the user can press the digits
+
+4. calc4.html
+   * Add button tag with attributes type="button" class="btn" sorrounding each button
+   Cons:
+     * Buttons look small
+
+5. calc5.html
+   * Add btn-lg to all the button class'es
+   Cons:
+     * Can buttons be made wider?
+
+6. calc6.html
+   * Add btn-block to all the button class'es
+   Cons:
+     * Can buttons become colorful please?
+
+7. calc7.html
+   * Add btn-info (blue) to all the digit buttons
+   * Add btn-success (green) to all the other buttons
+   Cons:
+     * Can we add some spacing please?
+
+8. calc8.html
+   * Replace css/calculator.css with css/calculator1.css
+   * Add id="calculator" to the table tag
+   Cons:
+     * Looks almost ok - can we pls. ensure the height?
+
+9. calc9.html
+   * Replace css/calculator1.css with css/calculator2.css
+   Cons:
+     * Like it -- Can we remove the line above each button please?
+
+10. calc10.html
+    * Replace css/calculator2.css with css/calculator3.css
+    Cons:
+     * Love it -- Can we make it functional (add Life please)?
