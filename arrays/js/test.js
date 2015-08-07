@@ -1,3 +1,4 @@
 function initialize() {
-  console.log("Testing 123");
+  var a = "Junk";
+  console.log("Testing", a);
 }
