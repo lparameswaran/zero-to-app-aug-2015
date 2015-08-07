@@ -25,7 +25,89 @@
    Cons:
      * Digits are not being appended - 1 digit replaces another
 
-5. calcJs5.html
+5. calcJs5.html/calc5.js
    * Digits are appended
+ 
+6. calcJs6.html/calc6.js
+   * C button is enabled
+   * C button calls clr() function
    Cons:
-     
+     * When display is 0, display still continues to append
+
+7. calcJs7.html/calc7.js
+   * Introduced if/else to ensure display is updated correctly in digit function
+   Cons:
+     * No restriction on number of digits -- user can continue typing as many digits as he wants
+
+8. calcJs8.html/calc8.js
+   * Enforce maximum number of digits in updateDisplay function
+   * Display ERROR when number of digits exceeds
+   Cons:
+     * Even when error is present on the screen, user can continue typing digits
+
+9. calcJs9.html/calc9.js
+   * Introduce a boolean variable called error, which all functions except clr checks
+   * First time true/false boolean values are used
+   * First time return command is used
+   Cons:
+     * No addition
+
+10. calcJs10.html/calc10.js
+   * Introduce a variable for previous result called prevNumber
+   * Introduce a variable for current result called result
+   * Introduce a variable for previous Operation called prevOperation
+   * Introduce add() function
+   * Introduce library function called parseInt
+   * Enable + operation & call add function
+   Cons:
+     * DOES NOT DISPLAY RESULT!!! Why? *Bonus Points for those who answer what we should do*
+
+11. calcJs11.html/calc11.js
+   * Enable = operation & call equals function
+   * Introduce console.log() for debugging
+   Cons:
+     * Oh Oh, once result is present, next numbers are getting appended
+
+12. calcJs12.html/calc12.js
+   * Introduce a autoClear flag which is used when the next digit is pressed
+   * Remove console.log() -- this is production code, we do not debug in production
+   Cons:
+     * There is a bug... display is misbehaving after a autoClear -- why?
+
+13. calcJs13.html/calc13.js
+   * clear the autoClear flag
+   Cons:
+     * WHAT happens if user presses 2 + 3 + 4 = ?
+
+14. calcJs14.html/calc14.js
+   * Fix add() logic to handle 2 + 3 + 4 ....
+   Cons:
+     * No subtraction
+
+15. calcJs15.html/calc15.js
+   * Introduce sub() function
+   * Enable - operation
+   Question:
+     * Shouldn't a 8 digit calculator allow +/- 8 digits?
+   Cons:
+     * No negative 8 digit number support
+
+16. calcJs16.html/calc16.js
+   * Allow for negative 8 digit numbers
+   Cons:
+     * There is still a problem --- Can anyone guess what it is, we have to fix?
+
+17. calcJs17.html/calc17.js
+   * Fixes the problem mentioned in #16 above
+   Cons:
+     * No multiplication/division; but calculator is functional.
+       Please test it out AND find out *if* there are bugs still.
+
+
+QUESTIONS:
+  * Why did we not do multiplication? What is the complication involved with it?
+  * What problems are likely to arise when we do division?
+
+    *******************************************************
+    ***** TIME TO DEPLOY TO THE DEVICE OF YOUR CHOICE *****
+    *******************************************************
