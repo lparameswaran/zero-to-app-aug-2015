@@ -4,4 +4,8 @@ function initialize() {
 
   a.push(6);
   console.log("Testing New array", a);
+
+  var t1 = a.pop();
+  var t2 = a.pop();
+  console.log("Popped", t1, t2, a);
 }
