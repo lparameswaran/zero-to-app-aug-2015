@@ -15,4 +15,11 @@ function initialize() {
 
   // Check the length of the array
   console.log("Array Length", a.length);
+
+  var str = ["i", "Am", "a", "aPP", "developER"];
+  console.log("array before change", str);
+  for (var i=0;i < str.length;i ++) {
+    str[i] = str[i].toUpperCase();
+  }
+  console.log("array after change", str);
 }
