@@ -1,4 +1,4 @@
 function initialize() {
-  var a = "Junk";
+  var a = [1, 2, 3, 4, 5];
   console.log("Testing", a);
 }
