@@ -1,4 +1,7 @@
 function initialize() {
-  var a = [1, 2, 3, 4, 5];
+  var a = [5, 500, 20, 21, 22];
   console.log("Testing", a);
+
+  a.push(6);
+  console.log("Testing New array", a);
 }
