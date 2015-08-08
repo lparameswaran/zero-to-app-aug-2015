@@ -18,8 +18,15 @@ function initialize() {
 
   var str = ["i", "Am", "a", "aPP", "developER"];
   console.log("array before change", str);
+  // The following code prints -- I AM A APP DEVELOPER
   for (var i=0;i < str.length;i ++) {
     str[i] = str[i].toUpperCase();
+    console.log(str[i]);
+  }
+  // The following code prints -- developer app a am i
+  for (var i=str.length - 1;i >=0;i ++) {
+    str[i] = str[i].toLowerCase();
+    console.log(str[i]);
   }
   console.log("array after change", str);
 }
